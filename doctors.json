@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Анна Смирнова",
+    "speciality": "Терапевт",
+    "experience": "Стаж 9 лет",
+    "photo": "./images/doctor-1-user.jpg",
+    "photoPosition": "center 25%"
+  },
+  {
+    "id": 2,
+    "name": "Илья Петров",
+    "speciality": "Кардиолог",
+    "experience": "Стаж 12 лет",
+    "photo": "./images/doctor-2-user.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Мария Кузнецова",
+    "speciality": "Невролог",
+    "experience": "Стаж 7 лет",
+    "photo": "./images/doctor-3-user.jpg",
+    "photoPosition": "center 20%"
+  },
+  {
+    "id": 4,
+    "name": "Олег Васильев",
+    "speciality": "Эндокринолог",
+    "experience": "Стаж 11 лет",
+    "photo": "./images/doctor-4-user.jpg"
+  }
+]
