@@ -10,6 +10,16 @@ function getPatientName() {
     return fromQuery.trim();
   }
 
+  const webAppUser = window.WebApp?.initDataUnsafe?.user;
+  if (webAppUser) {
+    const firstName = String(webAppUser.first_name || "").trim();
+    const lastName = String(webAppUser.last_name || "").trim();
+    const fullName = `${firstName} ${lastName}`.trim();
+    if (fullName) {
+      return fullName;
+    }
+  }
+
   const fromMaxUser = window.MAX?.user?.fullName || window.MAX?.user?.name;
   if (fromMaxUser && String(fromMaxUser).trim()) {
     return String(fromMaxUser).trim();
