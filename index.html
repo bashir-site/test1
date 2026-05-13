@@ -36,6 +36,23 @@
       </article>
     </template>
 
+    <div id="booking-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title" hidden>
+      <div class="modal-backdrop" data-modal-close></div>
+      <div class="modal-panel">
+        <header class="modal-header">
+          <div>
+            <p class="modal-caption">Запись на приём</p>
+            <h2 id="booking-modal-title" class="modal-title"></h2>
+            <p id="booking-modal-subtitle" class="modal-subtitle"></p>
+          </div>
+          <button type="button" class="modal-close" data-modal-close aria-label="Закрыть">×</button>
+        </header>
+        <p class="modal-slots-label">Выберите время (слоты по 30 минут)</p>
+        <div id="booking-slots" class="slots-grid"></div>
+        <p id="booking-confirm" class="booking-confirm" hidden></p>
+      </div>
+    </div>
+
     <script src="https://st.max.ru/js/max-web-app.js"></script>
     <script src="./app.js" defer></script>
   </body>
